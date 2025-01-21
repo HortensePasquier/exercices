@@ -39,7 +39,7 @@ def solve_knapsack_model(values, weights, capacity):
             if model.status == GRB.OPTIMAL:
                 selected_items = [i for i in items if x[i].x > 0.5]
                 print(f"Optimal value: {model.objVal}")
-                print(f"Selected items: {selected_items}")
+                #print(f"Selected items: {selected_items}")
                 print(f"Total weight: {sum(weights[i] for i in selected_items)}")
             else:
                 print("No optimal solution found!")
