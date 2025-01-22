@@ -45,6 +45,6 @@ def solve_knapsack_model(values, weights, capacity):
                 print("No optimal solution found!")
 
 
-# Example usage
+
 data = generate_knapsack(10000)  # Generate data for 10,000 items
 solve_knapsack_model(*data)
